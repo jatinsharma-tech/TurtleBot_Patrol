@@ -1,0 +1,17 @@
+lidar_obstacle_detector:
+  ros__parameters:
+    safe_distance: 0.5        # metres
+
+patrol_controller:
+  ros__parameters:
+    linear_speed: 0.15        # m/s
+    angular_speed: 0.5        # rad/s
+    side_length: 1.5          # size of the square route (m)
+    safe_distance: 0.5        # keep same as the detector
+
+telemetry_logger:
+  ros__parameters:
+    battery_start: 100.0      # %
+    drain_per_10s: 1.0        # % lost every 10 s of motion
+    log_file: telemetry_log.csv
+    log_period: 2.0           # seconds between csv writes
